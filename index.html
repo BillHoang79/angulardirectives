@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--ng-app is used to declare where angular code starts -->
+<html ng-app="app">
+	<head>
+		<title></title>
+		<link charset="UTF-8">
+		<meta name="Bill Hoang" content="template">
+    	<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<h1> Hello World!</h1>
+		<!-- ng controlller is used to operate views -->
+		<div ng-controller="MainController">
+		{{ val }}
+
+			<button ng-click="inc()">Click me</button>
+			<h2 ng-show="even">even</h2>
+			<h2 ng-hide="even">odd</h2>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>			
+		<script src="js/main.js"></script>
+	</body>
+</html>
+
